@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SITE</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="corpo.css" />
+        
+    </head>
+
+    <body>
+
+        <nav class="navbar container">
+            <a href="corpo.html" class="logo">Gerador de senhas</a>
+            <input type="checkbox" id="toggler" />
+            <label for="toggler"><i class="ri-menu-line"></i></label>
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="corpo.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="container">
+            <h2>Password Generator</h2>
+            <label for="length">Tamanho da senha:</label>
+            <input type="number" id="length" placeholder="Enter Length" value="12" max="30">
+            <input type="text" id="output" readonly>
+            <div>
+              <button onclick="generatePsw()" class="btn">Gerar</button>
+              <button onclick="copyPsw()" class="btn">Copiar</button>
+            </div>
+          </div>
+        <footer>
+
+            <div class="footer-content">
+        
+              <h3>Direitos autorais</h3>
+        
+              <p>Todos os direitos reservados. O conteúdo deste site, incluindo textos, imagens e logotipos, está protegido por direitos autorais. Qualquer reprodução, distribuição ou uso não autorizado do conteúdo é estritamente proibido sem permissão por escrito.</p>
+        
+              <ul class="socials">
+        
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>        
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+        
+              </ul>
+        
+            </div>
+        
+            <div class="footer-bottom">
+        
+              <p>Copyright &copy <span id="year"></span> <a href="https://www.instagram.com/gustavo_pscosta/">@gustavo_pscosta</a> </p>
+        
+              <div class="footer-menu">
+        
+                <ul class="f-menu">
+                  <li><a href="corpo.html">Home</a></li>
+                  <li><a href="sobre.html">Sobre</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+                </ul>
+        
+              </div>
+        
+            </div>
+        
+          </footer>
+    </body>
+    <script src="corpo.js"></script>
+</html>

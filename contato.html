@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site_gusta</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="corpo.css">
+    <style>
+       
+        .section{
+            position: absolute;
+            height: 300px;
+            width: 600px;
+            top: 200px;
+            left: calc(50% - 300px);
+            display: flex;
+        }
+        .card{
+            display: flex;
+            height: 280px;
+            width: 200px;
+            background-color: #1f2327;
+            border-radius: 10px;
+            box-shadow: -1rem 0 3rem #0003;
+            transition: 0.4s ease-out;
+            position: relative;
+            left: 0px;           
+        }
+        .card:not(:first-child){
+             margin-left: -50px;
+        }
+        .card:hover{
+          transform: translateY(-20px);
+          transition: 0.4s ease-out;
+        }
+        .card:hover ~ .card{
+          position: relative;
+          left: 50px;
+          transition: 0.4s ease-out;
+        }
+        .title{
+          color: #666666;
+          font-weight: 500;
+          position: absolute;
+          left: 20px;
+          top: 15px;
+        }
+        .card a{
+          text-decoration: none;
+          cursor: pointer;
+          color: #666666;
+        }
+        *{
+          margin: 0;
+          padding: 0;
+        }
+        .typing{
+          overflow: hidden;
+          border-right: 0.15em solid #5007e0;
+          white-space: nowrap;
+          letter-spacing: 2px;
+          animation: typing 4s steps(30, end) infinite,
+          blink 0.75s step-end infinite;
+        }
+        @keyframes typing {
+          from {
+            width: 0;
+          }
+          to {
+            width: 100%;
+          }
+        }
+
+        @keyframes blink {
+
+          from, to {
+            border-color: transparent;
+          }
+
+          50% {
+            border-color: #5007e0;
+          }
+
+        }
+        h1{
+          color: #666666;
+          position: relative;
+          top: 500px;
+          left: 390px;
+        }
+        .foto1{
+          position: relative;
+          width: auto;
+          height: 50%;
+          top: 25%;
+          right: 10%;
+        }
+        .foto2{
+          position: relative;
+          width: auto;
+          height: 50%;
+          top: 25%;
+          right: 05%;
+        }
+        .foto3{
+          position: relative;
+          right: 05%;
+          padding: 242.41, 140;
+          top: 9%;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="section">
+      <div class="card">
+        <h3 class="title"><a href="https://br.linkedin.com/?trk=guest_homepage-basic_nav-header-logo">LinkedIn</a> <a href="https://br.linkedin.com/?trk=guest_homepage-basic_nav-header-logo"><i class="fa fa-linkedin-square"></i></a></h3>
+        <a href="https://br.linkedin.com/?trk=guest_homepage-basic_nav-header-logo"><img class="foto1" src="../fotos/linkedin.png"></a>
+      </div>
+      <div class="card">
+        <h3 class="title"><a href="https://instagram.com/gustavo_pscosta?igshid=MmIzYWVlNDQ5Yg==">Instagram</a> <a href="https://instagram.com/gustavo_pscosta?igshid=MmIzYWVlNDQ5Yg=="><i class="fa fa-instagram"></i></h3></i></a>
+        <a href="https://instagram.com/gustavo_pscosta?igshid=MmIzYWVlNDQ5Yg=="><img class="foto2" src="../fotos/instagram.png"></a>
+      </div>
+      <div class="card">
+        <h3 class="title"><a href="https://wa.me/5521996126110">Whatsapp</a> <a href="https://wa.me/5521996126110"><i class="fa fa-whatsapp"></i></a></h3>
+        <a href="https://wa.me/5521996126110"><img class="foto3" src="../fotos/whatsapp.png"></a>
+      </div>
+    </div>
+
+    <nav class="navbar container">
+        <a href="corpo.html" class="logo">Gerador de senhas</a>
+        <input type="checkbox" id="toggler" />
+        <label for="toggler"><i class="ri-menu-line"></i></label>
+        <div class="menu">
+            <ul class="list">
+                <li><a href="corpo.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="typing">Obrigado pela preferência!!</h1>
+   <!--
+    <footer>
+
+        <div class="footer-content">
+    
+          <h3>Rodape</h3>
+    
+          <p>Todos os direitos reservados. O conteúdo deste site, incluindo textos, imagens e logotipos, está protegido por direitos autorais. Qualquer reprodução, distribuição ou uso não autorizado do conteúdo é estritamente proibido sem permissão por escrito.</p>
+    
+          <ul class="socials">
+    
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>        
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+    
+          </ul>
+    
+        </div>
+    
+        <div class="footer-bottom">
+    
+          <p>Copyright &copy <span id="year"></span> <a href="https://www.instagram.com/gustavo_pscosta/">@gustavo_pscosta</a> </p>
+    
+          <div class="footer-menu">
+    
+            <ul class="f-menu">
+              <li><a href="corpo.html">Home</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+    
+          </div>
+    
+        </div>
+    
+      </footer>
+      -->
+</body>
+</html>
