@@ -1,0 +1,2 @@
+# passwordGenerator
+The main HTML file of the website is called index.html, which serves as the body of the site. The "corpo.css" file is used to style the website and enhance its appearance. The "corpo.js" file is responsible for the functionality of the password generator. The remaining files are directories that the user can choose within the site. There are three PNG images used to populate the "contato" tab.
